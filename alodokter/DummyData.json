@@ -1,0 +1,225 @@
+{
+  "data" : [
+    {
+      "price" : "Rp50.000",
+      "user_picture" : "http:\/\/res.cloudinary.com\/dk0z4ums3\/image\/upload\/v1565144485\/user_images\/5d366bffa60b5912e81ba2da.jpg",
+      "user_picture_thumbnail" : "http:\/\/res.cloudinary.com\/dk0z4ums3\/image\/upload\/w_100,h_100,c_fit\/v1565144485\/user_images\/5d366bffa60b5912e81ba2da.jpg",
+      "doctor_status" : {
+        "online_text" : "Online",
+        "online_message" : "",
+        "online_status" : 4
+      },
+      "speciality" : "Dokter Spesialis Bedah",
+      "satisfaction" : "80%",
+      "is_not_satisfied" : false,
+      "id" : "5d366bffa60b5912e81ba2da",
+      "total_reviews" : "puas dari 6 pasien",
+      "fullname" : "dr.endai",
+      "desc" : "Dokter Spesialis Bedah"
+    },
+    {
+      "price" : "Rp5.000",
+      "user_picture" : "",
+      "user_picture_thumbnail" : "",
+      "doctor_status" : {
+        "online_text" : "Online",
+        "online_message" : "",
+        "online_status" : 4
+      },
+      "speciality" : "Dokter Umum",
+      "satisfaction" : "belum ada rating",
+      "is_not_satisfied" : true,
+      "id" : "5d5b58a2a60b59340bfc8302",
+      "total_reviews" : "",
+      "fullname" : "dr. endai umum",
+      "desc" : "Dokter Umum"
+    },
+    {
+      "price" : "Rp5.000",
+      "user_picture" : "",
+      "user_picture_thumbnail" : "",
+      "doctor_status" : {
+        "online_text" : "Offline",
+        "online_message" : "Dokter sedang offline. Silakan chat dengan dokter lain.",
+        "online_status" : 0
+      },
+      "speciality" : "Dokter Spesialis Anak",
+      "satisfaction" : "100%",
+      "is_not_satisfied" : false,
+      "id" : "5d32bfcea60b59137c34e76e",
+      "total_reviews" : "puas dari 2 pasien",
+      "fullname" : "dr.Tia Widi Specialist",
+      "desc" : "Dokter Spesialis Anak"
+    },
+    {
+      "fullname" : "dr.Septhya",
+      "user_picture" : "",
+      "price" : "Rp50.000",
+      "doctor_status" : {
+        "online_text" : "Offline",
+        "online_message" : "Dokter sedang offline. Silakan chat dengan dokter lain.",
+        "online_status" : 0
+      },
+      "desc" : "Dokter Spesialis Anak",
+      "id" : "5d2e94f6a60b59110055c080",
+      "is_not_satisfied" : false,
+      "satisfaction" : "100%",
+      "total_reviews" : "puas dari 15 pasien",
+      "user_picture_thumbnail" : "",
+      "speciality" : "Dokter Spesialis Anak"
+    },
+    {
+      "is_not_satisfied" : false,
+      "fullname" : "dr.Lebron test",
+      "doctor_status" : {
+        "online_text" : "Offline",
+        "online_message" : "Dokter sedang offline. Silakan chat dengan dokter lain.",
+        "online_status" : 0
+      },
+      "speciality" : "Dokter Spesialis Anak",
+      "price" : "Rp50.000",
+      "desc" : "Dokter Spesialis Anak",
+      "id" : "5d5de120a60b5954932ad93c",
+      "user_picture" : "",
+      "satisfaction" : "100%",
+      "total_reviews" : "puas dari 3 pasien",
+      "user_picture_thumbnail" : ""
+    },
+    {
+      "user_picture" : "",
+      "id" : "5d31432da60b59189b818070",
+      "doctor_status" : {
+        "online_text" : "Offline",
+        "online_message" : "Dokter sedang offline. Silakan chat dengan dokter lain.",
+        "online_status" : 0
+      },
+      "speciality" : "Dokter Spesialis Anak",
+      "is_not_satisfied" : false,
+      "satisfaction" : "70%",
+      "price" : "Rp50.000",
+      "user_picture_thumbnail" : "",
+      "total_reviews" : "puas dari 8 pasien",
+      "fullname" : "dr.Hamish test",
+      "desc" : "Dokter Spesialis Anak"
+    },
+    {
+      "satisfaction" : "100%",
+      "fullname" : "dr.Pangestu",
+      "doctor_status" : {
+        "online_text" : "Offline",
+        "online_message" : "Dokter sedang offline. Silakan chat dengan dokter lain.",
+        "online_status" : 0
+      },
+      "desc" : "Dokter Spesialis Mata",
+      "price" : "Rp50.000",
+      "is_not_satisfied" : false,
+      "user_picture_thumbnail" : "http:\/\/res.cloudinary.com\/dk0z4ums3\/image\/upload\/w_100,h_100,c_fit\/v1565065865\/user_images\/5d3fc61ca60b590a1e8dda6a.jpg",
+      "total_reviews" : "puas dari 1 pasien",
+      "speciality" : "Dokter Spesialis Mata",
+      "user_picture" : "http:\/\/res.cloudinary.com\/dk0z4ums3\/image\/upload\/v1565065865\/user_images\/5d3fc61ca60b590a1e8dda6a.jpg",
+      "id" : "5d3fc61ca60b590a1e8dda6a"
+    },
+    {
+      "speciality" : "Dokter Gigi",
+      "total_reviews" : "puas dari 2 pasien",
+      "satisfaction" : "100%",
+      "doctor_status" : {
+        "online_text" : "Offline",
+        "online_message" : "Dokter sedang offline. Silakan chat dengan dokter lain.",
+        "online_status" : 0
+      },
+      "is_not_satisfied" : false,
+      "user_picture_thumbnail" : "",
+      "user_picture" : "",
+      "price" : "Rp50.000",
+      "fullname" : "drg.kawa",
+      "desc" : "Dokter Gigi",
+      "id" : "5d53b322a60b5931c59554f9"
+    },
+    {
+      "user_picture" : "",
+      "price" : "Rp50.000",
+      "satisfaction" : "100%",
+      "is_not_satisfied" : false,
+      "total_reviews" : "puas dari 2 pasien",
+      "fullname" : "dr.kyrie irving",
+      "user_picture_thumbnail" : "",
+      "doctor_status" : {
+        "online_text" : "Offline",
+        "online_message" : "Dokter sedang offline. Silakan chat dengan dokter lain.",
+        "online_status" : 0
+      },
+      "id" : "5d526441a60b593f884b9ded",
+      "desc" : "Dokter Spesialis Anak",
+      "speciality" : "Dokter Spesialis Anak"
+    },
+    {
+      "total_reviews" : "",
+      "id" : "5ae87a075e05a00bee72f785",
+      "desc" : "Dokter Spesialis Bedah",
+      "user_picture" : "http:\/\/res.cloudinary.com\/dk0z4ums3\/image\/upload\/v1547648915\/user_images\/5ae87a075e05a00bee72f785.jpg",
+      "speciality" : "Dokter Spesialis Bedah",
+      "is_not_satisfied" : true,
+      "user_picture_thumbnail" : "http:\/\/res.cloudinary.com\/dk0z4ums3\/image\/upload\/w_100,h_100,c_fit\/v1547648915\/user_images\/5ae87a075e05a00bee72f785.jpg",
+      "satisfaction" : "belum ada rating",
+      "fullname" : "dr. kurawa",
+      "price" : "Rp15.000",
+      "doctor_status" : {
+        "online_text" : "Offline",
+        "online_message" : "Dokter sedang offline. Silakan chat dengan dokter lain.",
+        "online_status" : 0
+      }
+    },
+    {
+      "user_picture_thumbnail" : "http:\/\/res.cloudinary.com\/dk0z4ums3\/image\/upload\/w_100,h_100,c_fit\/v1532080875\/user_images\/5ae87bed2c0aba09ffa649ca.jpg",
+      "price" : "Rp15.000",
+      "fullname" : "dr. Agung ",
+      "id" : "5ae87bed2c0aba09ffa649ca",
+      "user_picture" : "http:\/\/res.cloudinary.com\/dk0z4ums3\/image\/upload\/v1532080875\/user_images\/5ae87bed2c0aba09ffa649ca.jpg",
+      "doctor_status" : {
+        "online_text" : "Offline",
+        "online_message" : "Dokter sedang offline. Silakan chat dengan dokter lain.",
+        "online_status" : 0
+      },
+      "speciality" : "Dokter Spesialis Penyakit Dalam",
+      "satisfaction" : "belum ada rating",
+      "desc" : "Dokter Spesialis Penyakit Dalam",
+      "is_not_satisfied" : true,
+      "total_reviews" : ""
+    },
+    {
+      "user_picture_thumbnail" : "http:\/\/res.cloudinary.com\/dk0z4ums3\/image\/upload\/w_100,h_100,c_fit\/v1525355073\/user_images\/5ae9dd3033914c0a081d58d1.jpg",
+      "total_reviews" : "",
+      "satisfaction" : "belum ada rating",
+      "price" : "Rp15.000",
+      "user_picture" : "http:\/\/res.cloudinary.com\/dk0z4ums3\/image\/upload\/v1525355073\/user_images\/5ae9dd3033914c0a081d58d1.jpg",
+      "fullname" : "dr.Roby ",
+      "desc" : "Dokter Spesialis Kulit",
+      "id" : "5ae9dd3033914c0a081d58d1",
+      "speciality" : "Dokter Spesialis Kulit",
+      "doctor_status" : {
+        "online_text" : "Offline",
+        "online_message" : "Dokter sedang offline. Silakan chat dengan dokter lain.",
+        "online_status" : 0
+      },
+      "is_not_satisfied" : true
+    },
+    {
+      "user_picture" : "http:\/\/res.cloudinary.com\/dk0z4ums3\/image\/upload\/v1528184432\/user_images\/5aeea11b378f690c5fd4f509.jpg",
+      "total_reviews" : "",
+      "fullname" : "dr.Andrio Prabowo,SpB",
+      "user_picture_thumbnail" : "http:\/\/res.cloudinary.com\/dk0z4ums3\/image\/upload\/w_100,h_100,c_fit\/v1528184432\/user_images\/5aeea11b378f690c5fd4f509.jpg",
+      "id" : "5aeea11b378f690c5fd4f509",
+      "speciality" : "Dokter Spesialis Bedah",
+      "price" : "Rp15.000",
+      "doctor_status" : {
+        "online_message" : "Dokter sedang offline. Silakan chat dengan dokter lain.",
+        "online_status" : 0,
+        "online_text" : "Offline"
+      },
+      "is_not_satisfied" : true,
+      "desc" : "Dokter Spesialis Bedah",
+      "satisfaction" : "belum ada rating"
+    }
+  ]
+} 

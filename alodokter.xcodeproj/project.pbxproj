@@ -7,14 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A320D8AA23166A7100AE568A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A320D8A923166A7100AE568A /* Model.swift */; };
+		A320D8AC23166B0900AE568A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A320D8AB23166B0900AE568A /* ViewModel.swift */; };
+		A320D8AF23166BB200AE568A /* DoctorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A320D8AE23166BB200AE568A /* DoctorTableViewCell.swift */; };
+		A320D8B123166C3C00AE568A /* DoctorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A320D8B023166C3C00AE568A /* DoctorTableViewCell.xib */; };
+		A320D8B42316D74D00AE568A /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = A320D8B32316D74D00AE568A /* chat.png */; };
+		A320D8B62316E26500AE568A /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = A320D8B52316E26500AE568A /* avatar.png */; };
+		A320D8B82316E35700AE568A /* inbox.png in Resources */ = {isa = PBXBuildFile; fileRef = A320D8B72316E35700AE568A /* inbox.png */; };
+		A320D8BC2316EC5800AE568A /* doctor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A320D8BB2316EC5800AE568A /* doctor.jpg */; };
+		A320D8BE2316ED5E00AE568A /* more.png in Resources */ = {isa = PBXBuildFile; fileRef = A320D8BD2316ED5E00AE568A /* more.png */; };
 		A321140D23153D5F00342E8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A321140C23153D5F00342E8F /* AppDelegate.swift */; };
 		A321140F23153D5F00342E8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A321140E23153D5F00342E8F /* ViewController.swift */; };
 		A321141223153D5F00342E8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A321141023153D5F00342E8F /* Main.storyboard */; };
 		A321141423153D6000342E8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A321141323153D6000342E8F /* Assets.xcassets */; };
 		A321141723153D6000342E8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A321141523153D6000342E8F /* LaunchScreen.storyboard */; };
+		A321141F23153DFC00342E8F /* DummyData.json in Resources */ = {isa = PBXBuildFile; fileRef = A321141E23153DFC00342E8F /* DummyData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A320D8A923166A7100AE568A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A320D8AB23166B0900AE568A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A320D8AE23166BB200AE568A /* DoctorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorTableViewCell.swift; sourceTree = "<group>"; };
+		A320D8B023166C3C00AE568A /* DoctorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoctorTableViewCell.xib; sourceTree = "<group>"; };
+		A320D8B32316D74D00AE568A /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat.png; sourceTree = "<group>"; };
+		A320D8B52316E26500AE568A /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
+		A320D8B72316E35700AE568A /* inbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inbox.png; sourceTree = "<group>"; };
+		A320D8BB2316EC5800AE568A /* doctor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = doctor.jpg; sourceTree = "<group>"; };
+		A320D8BD2316ED5E00AE568A /* more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = more.png; sourceTree = "<group>"; };
 		A321140923153D5F00342E8F /* alodokter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alodokter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A321140C23153D5F00342E8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A321140E23153D5F00342E8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +41,7 @@
 		A321141323153D6000342E8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A321141623153D6000342E8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A321141823153D6000342E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A321141E23153DFC00342E8F /* DummyData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DummyData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +55,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A320D8A62316302800AE568A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A320D8AD23166B7900AE568A /* CustomCell */,
+				A321140E23153D5F00342E8F /* ViewController.swift */,
+				A321141023153D5F00342E8F /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A320D8A72316303400AE568A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A320D8A923166A7100AE568A /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A320D8A82316305300AE568A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A320D8AB23166B0900AE568A /* ViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		A320D8AD23166B7900AE568A /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				A320D8AE23166BB200AE568A /* DoctorTableViewCell.swift */,
+				A320D8B023166C3C00AE568A /* DoctorTableViewCell.xib */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		A320D8B22316D73A00AE568A /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				A320D8BD2316ED5E00AE568A /* more.png */,
+				A320D8BB2316EC5800AE568A /* doctor.jpg */,
+				A320D8B72316E35700AE568A /* inbox.png */,
+				A320D8B52316E26500AE568A /* avatar.png */,
+				A320D8B32316D74D00AE568A /* chat.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		A321140023153D5F00342E8F = {
 			isa = PBXGroup;
 			children = (
@@ -54,9 +121,12 @@
 		A321140B23153D5F00342E8F /* alodokter */ = {
 			isa = PBXGroup;
 			children = (
+				A320D8B22316D73A00AE568A /* Image */,
+				A320D8A82316305300AE568A /* ViewModel */,
+				A320D8A72316303400AE568A /* Model */,
+				A320D8A62316302800AE568A /* View */,
+				A321141E23153DFC00342E8F /* DummyData.json */,
 				A321140C23153D5F00342E8F /* AppDelegate.swift */,
-				A321140E23153D5F00342E8F /* ViewController.swift */,
-				A321141023153D5F00342E8F /* Main.storyboard */,
 				A321141323153D6000342E8F /* Assets.xcassets */,
 				A321141523153D6000342E8F /* LaunchScreen.storyboard */,
 				A321141823153D6000342E8F /* Info.plist */,
@@ -122,9 +192,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A321141F23153DFC00342E8F /* DummyData.json in Resources */,
+				A320D8B62316E26500AE568A /* avatar.png in Resources */,
 				A321141723153D6000342E8F /* LaunchScreen.storyboard in Resources */,
 				A321141423153D6000342E8F /* Assets.xcassets in Resources */,
+				A320D8BC2316EC5800AE568A /* doctor.jpg in Resources */,
+				A320D8B82316E35700AE568A /* inbox.png in Resources */,
+				A320D8BE2316ED5E00AE568A /* more.png in Resources */,
+				A320D8B123166C3C00AE568A /* DoctorTableViewCell.xib in Resources */,
 				A321141223153D5F00342E8F /* Main.storyboard in Resources */,
+				A320D8B42316D74D00AE568A /* chat.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +212,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A320D8AA23166A7100AE568A /* Model.swift in Sources */,
 				A321140F23153D5F00342E8F /* ViewController.swift in Sources */,
+				A320D8AC23166B0900AE568A /* ViewModel.swift in Sources */,
 				A321140D23153D5F00342E8F /* AppDelegate.swift in Sources */,
+				A320D8AF23166BB200AE568A /* DoctorTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
