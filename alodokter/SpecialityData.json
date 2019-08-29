@@ -1,0 +1,124 @@
+{
+  "doctor_specialities" : [
+      {
+        "name" : "Semua Dokter",
+        "id" : "",
+        "display_name" : "Semua",
+        "alias" : "Semua"
+      },
+      {
+        "name" : "Dokter Spesialis Kandungan",
+        "id" : "10",
+        "display_name" : "Kandungan",
+        "alias" : "Dokter Spesialis Kandungan"
+      },
+      {
+        "name" : "Dokter Spesialis Anak",
+        "id" : "11",
+        "display_name" : "Anak",
+        "alias" : "Dokter Spesialis Anak"
+      },
+      {
+        "name" : "Dokter Spesialis Kulit",
+        "id" : "12",
+        "display_name" : "Kulit & Kelamin",
+        "alias" : "Dokter Spesialis Kulit"
+      },
+      {
+        "name" : "Dokter Spesialis Penyakit Dalam",
+        "id" : "13",
+        "display_name" : "Penyakit Dalam",
+        "alias" : "Dokter Spesialis Penyakit Dalam"
+      },
+      {
+        "name" : "Dokter Spesialis Psikiater",
+        "id" : "14",
+        "display_name" : "Psikiater",
+        "alias" : "Psikiater"
+      },
+      {
+        "name" : "Dokter Spesialis Saraf",
+        "id" : "15",
+        "display_name" : "Saraf",
+        "alias" : "Dokter Spesialis Saraf"
+      },
+      {
+        "name" : "Dokter Spesialis THT",
+        "id" : "16",
+        "display_name" : "THT",
+        "alias" : "Dokter Spesialis THT"
+      },
+      {
+        "name" : "Dokter Spesialis Bedah",
+        "id" : "17",
+        "display_name" : "Bedah",
+        "alias" : "Dokter Spesialis Bedah"
+      },
+      {
+        "name" : "Dokter Spesialis Mata",
+        "id" : "18",
+        "display_name" : "Mata",
+        "alias" : "Dokter Spesialis Mata"
+      },
+      {
+        "name" : "Dokter Spesialis Gizi",
+        "id" : "19",
+        "display_name" : "Gizi",
+        "alias" : "Dokter Spesialis Gizi"
+      },
+      {
+        "name" : "Dokter Spesialis Jantung",
+        "id" : "20",
+        "display_name" : "Jantung",
+        "alias" : "Dokter Spesialis Jantung"
+      },
+      {
+        "name" : "Dokter Spesialis Urologi - Andrologi",
+        "id" : "21",
+        "display_name" : "Urologi",
+        "alias" : "Dokter Spesialis Urologi "
+      },
+      {
+        "name" : "Dokter Spesialis Paru",
+        "id" : "22",
+        "display_name" : "Paru",
+        "alias" : "Dokter Spesialis Paru"
+      },
+      {
+        "name" : "Dokter Spesialis Ortopedi",
+        "id" : "23",
+        "display_name" : "Ortopedi",
+        "alias" : "Dokter Ortopedi"
+      },
+      {
+        "name" : "Dokter Spesialis Bedah Plastik",
+        "id" : "24",
+        "display_name" : "Bedah Plastik",
+        "alias" : "Dokter Spesialis Bedah Plastik"
+      },
+      {
+        "name" : "Dokter Spesialis Bedah Thoraks Kardio Vaskuler",
+        "id" : "25",
+        "display_name" : "Bedah Thoraks Kardio Vaskuler",
+        "alias" : "Dokter Spesialis Bedah Thoraks Kardio Vaskuler"
+      },
+      {
+        "name" : "Dokter Gigi",
+        "id" : "26",
+        "display_name" : "Gigi",
+        "alias" : "Dokter Gigi"
+      },
+      {
+        "name" : "Psikolog",
+        "id" : "27",
+        "display_name" : "Psikolog",
+        "alias" : "Psikolog"
+      },
+      {
+        "name" : "Umum",
+        "id" : "28",
+        "display_name" : "Umum",
+        "alias" : "Umum"
+      }
+    ]
+} 

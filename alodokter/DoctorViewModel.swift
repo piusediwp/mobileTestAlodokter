@@ -1,5 +1,5 @@
 //
-//  ViewModel.swift
+//  DoctorViewModel.swift
 //  alodokter
 //
 //  Created by Pius Edi Werda Pebriujianta on 28/08/19.
@@ -8,17 +8,17 @@
 
 import Foundation
 
-class ViewModel {
+class DoctorViewModel {
     
-    var items = [Model]()
+    var items = [DoctorModel]()
     
     init() {
-        if let path = Bundle.main.path(forResource: "DummyData", ofType: "json") {
+        if let path = Bundle.main.path(forResource: "DoctorData", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
                 if let jsonResult = jsonResult as? Dictionary<String, AnyObject>, let doctor = jsonResult["data"] as? [Any] {
-                    self.items = Model.modelFromDoctorArray(array: doctor as NSArray)
+                    self.items = DoctorModel.modelFromDoctorArray(array: doctor as NSArray)
                 }
             } catch {
                 print("File not found")

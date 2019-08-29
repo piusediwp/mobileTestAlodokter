@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" rowHeight="72" id="3vD-wh-Xql" customClass="DoctorTableViewCell" customModule="alodokter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3vD-wh-Xql" id="dGQ-6f-11V" customClass="DoctorTableViewCell" customModule="alodokter" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PKS-Tl-07t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="C8f-c9-71K">
+                                <rect key="frame" x="12" y="12" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="4Vn-lB-2jM"/>
+                                    <constraint firstAttribute="height" constant="40" id="IhK-Ad-UZG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fullname" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VN6-9t-w06">
+                                <rect key="frame" x="64" y="12" width="53.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spesialis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKV-Xd-QeI">
+                                <rect key="frame" x="64" y="34.5" width="43" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat Sekarang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SS7-1w-4sf">
+                                <rect key="frame" x="64" y="50.5" width="71" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9a-rW-iEW">
+                                <rect key="frame" x="42" y="14" width="8" height="8"/>
+                                <color key="backgroundColor" red="0.30588235294117649" green="0.72156862745098038" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="8" id="Vew-za-0Rv"/>
+                                    <constraint firstAttribute="height" constant="8" id="nzk-h3-OLC"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" fixedFrame="YES" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhJ-bm-t1k">
+                                <rect key="frame" x="302" y="8" width="27" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VN6-9t-w06" firstAttribute="leading" secondItem="C8f-c9-71K" secondAttribute="trailing" constant="12" id="4bS-kn-hc9"/>
+                            <constraint firstItem="b9a-rW-iEW" firstAttribute="leading" secondItem="3CH-IK-VmP" secondAttribute="leading" constant="42" id="5aN-0x-CcK"/>
+                            <constraint firstItem="fKV-Xd-QeI" firstAttribute="top" secondItem="VN6-9t-w06" secondAttribute="bottom" constant="8" id="8de-LI-iQt"/>
+                            <constraint firstItem="VN6-9t-w06" firstAttribute="top" secondItem="C8f-c9-71K" secondAttribute="top" id="9wn-xl-gco"/>
+                            <constraint firstItem="C8f-c9-71K" firstAttribute="top" secondItem="3CH-IK-VmP" secondAttribute="top" constant="12" id="FC0-7S-bBR"/>
+                            <constraint firstItem="C8f-c9-71K" firstAttribute="leading" secondItem="3CH-IK-VmP" secondAttribute="leading" constant="12" id="Fzo-qT-atv"/>
+                            <constraint firstItem="VN6-9t-w06" firstAttribute="top" secondItem="3CH-IK-VmP" secondAttribute="top" constant="12" id="K0h-Wt-6ey"/>
+                            <constraint firstItem="b9a-rW-iEW" firstAttribute="top" secondItem="3CH-IK-VmP" secondAttribute="top" constant="14" id="Nd0-fU-wTo"/>
+                            <constraint firstItem="SS7-1w-4sf" firstAttribute="leading" secondItem="C8f-c9-71K" secondAttribute="trailing" constant="12" id="hKn-41-alf"/>
+                            <constraint firstItem="SS7-1w-4sf" firstAttribute="top" secondItem="fKV-Xd-QeI" secondAttribute="bottom" constant="4" id="hjF-cY-LMD"/>
+                            <constraint firstItem="fKV-Xd-QeI" firstAttribute="leading" secondItem="C8f-c9-71K" secondAttribute="trailing" constant="12" id="kmy-xx-78D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3CH-IK-VmP"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PKS-Tl-07t" firstAttribute="bottom" secondItem="gf1-5f-kxH" secondAttribute="bottom" id="0sJ-IY-KB7"/>
+                    <constraint firstItem="PKS-Tl-07t" firstAttribute="top" secondItem="gf1-5f-kxH" secondAttribute="top" id="Pws-Dz-JHe"/>
+                    <constraint firstItem="PKS-Tl-07t" firstAttribute="leading" secondItem="gf1-5f-kxH" secondAttribute="leading" id="fJK-4E-Rth"/>
+                    <constraint firstItem="PKS-Tl-07t" firstAttribute="trailing" secondItem="gf1-5f-kxH" secondAttribute="trailing" id="p2I-ng-1cq"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="gf1-5f-kxH"/>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="uZ9-H0-5t2"/>
+            <connections>
+                <outlet property="doctorImage" destination="C8f-c9-71K" id="pjv-gw-KTt"/>
+                <outlet property="fullnameLabel" destination="VN6-9t-w06" id="ujw-7s-x17"/>
+                <outlet property="onlineView" destination="b9a-rW-iEW" id="SlG-46-rTs"/>
+                <outlet property="priceLabel" destination="SS7-1w-4sf" id="ysH-7f-nxl"/>
+                <outlet property="ratingLabel" destination="AhJ-bm-t1k" id="zMj-w7-RxE"/>
+                <outlet property="spesialisLabel" destination="fKV-Xd-QeI" id="4Qd-yn-jhe"/>
+            </connections>
+            <point key="canvasLocation" x="-16.800000000000001" y="31.484257871064472"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatar.png" width="200" height="200"/>
+    </resources>
+</document>

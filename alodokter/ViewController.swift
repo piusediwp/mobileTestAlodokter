@@ -16,8 +16,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageDokterGratis: UIImageView!
     @IBOutlet weak var backgroundChatList: UIView!
     @IBOutlet weak var backgroundDokterSpesialis: UIView!
+    @IBOutlet weak var dokterSearch: UISearchBar!
     
-    var viewModel: ViewModel?
+    var doctorViewModel: DoctorViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +32,7 @@ class ViewController: UIViewController {
         gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.95)
         gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.05)
         backgroundView.layer.addSublayer(gradientLayer)
-        backgroundView.frame.size.height = 300
+        backgroundView.frame.size.height = 200
         backgroundView.frame.size.width = screenWidth
         
         imageDokterGratis.layer.masksToBounds = true
@@ -53,7 +54,10 @@ class ViewController: UIViewController {
         backgroundChatList.layer.shadowOffset = .zero
         backgroundChatList.layer.shadowRadius = 2
         
-        viewModel = ViewModel()
+        let textFieldInsideUISearchBarLabel = textFieldInsideUISearchBar!.value(forKey: "placeholderLabel") as? UILabel
+        textFieldInsideUISearchBarLabel?.textColor = UIColor.red
+        
+        doctorViewModel = DoctorViewModel()
         let nib = UINib(nibName: "DoctorTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "itemCell")
         tableView.dataSource = self
@@ -63,20 +67,16 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    override var shouldAutorotate: Bool {
-        return false
-    }
 }
 
 extension ViewController: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (viewModel?.items.count)!
+        return (doctorViewModel?.items.count)!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell") as! DoctorTableViewCell
-        cell.setupDataFromModel(model: viewModel!.items[indexPath.row])
+        cell.setupDataFromModel(model: doctorViewModel!.items[indexPath.row])
         return cell
     }
     
