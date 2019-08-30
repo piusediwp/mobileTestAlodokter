@@ -11,6 +11,7 @@ import UIKit
 class SpecialityViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var backButton: UIBarButtonItem!
     
     var specialityViewModel: SpecialityViewModel?
     
@@ -26,6 +27,11 @@ class SpecialityViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    
+    @IBAction func backButton(_ sender: Any) {
+        performSegue(withIdentifier: "specialityBack", sender: self)
     }
 }
 

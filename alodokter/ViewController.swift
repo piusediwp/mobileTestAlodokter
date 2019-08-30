@@ -16,7 +16,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageDokterGratis: UIImageView!
     @IBOutlet weak var backgroundChatList: UIView!
     @IBOutlet weak var backgroundDokterSpesialis: UIView!
-    @IBOutlet weak var dokterSearch: UISearchBar!
+    @IBOutlet weak var hamburgerButton: UIButton!
+    @IBOutlet weak var arrowButton: UIButton!
+    @IBOutlet weak var backgroundSpeciality: UIView!
+    @IBOutlet weak var backgroundSearch: UIView!
+    @IBOutlet weak var backgroundHamburger: UIView!
     
     var doctorViewModel: DoctorViewModel?
     
@@ -54,8 +58,35 @@ class ViewController: UIViewController {
         backgroundChatList.layer.shadowOffset = .zero
         backgroundChatList.layer.shadowRadius = 2
         
-        let textFieldInsideUISearchBarLabel = textFieldInsideUISearchBar!.value(forKey: "placeholderLabel") as? UILabel
-        textFieldInsideUISearchBarLabel?.textColor = UIColor.red
+        let hamburgerImage = UIImage(named: "menu")
+        let hamburgerTintedImage = hamburgerImage?.withRenderingMode(.alwaysTemplate)
+        hamburgerButton.setImage(hamburgerTintedImage, for: .normal)
+        hamburgerButton.tintColor = UIColor(red: 65 / 255.0, green: 127 / 255.0, blue: 226 / 255.0, alpha: 1.0)
+        
+        let arrowImage = UIImage(named: "more")
+        let arrowTintedImage = arrowImage?.withRenderingMode(.alwaysTemplate)
+        arrowButton.setImage(arrowTintedImage, for: .normal)
+        arrowButton.tintColor = UIColor(red: 65 / 255.0, green: 127 / 255.0, blue: 226 / 255.0, alpha: 1.0)
+    
+        let specialityView = UIView(frame: CGRect(x: 0, y: 0, width: backgroundSpeciality.bounds.width, height: 1))
+        specialityView.layer.borderWidth = 1.0
+        specialityView.layer.borderColor = UIColor(red:222/255, green:225/255, blue:227/255, alpha: 1).cgColor
+        backgroundSpeciality.addSubview(specialityView)
+        
+        let searchTopView = UIView(frame: CGRect(x: 0, y: 0, width: backgroundSearch.bounds.width, height: 1))
+        searchTopView.layer.borderWidth = 1.0
+        searchTopView.layer.borderColor = UIColor(red:222/255, green:225/255, blue:227/255, alpha: 1).cgColor
+        backgroundSearch.addSubview(searchTopView)
+        
+        let searchBottomView = UIView(frame: CGRect(x: 0, y: backgroundSearch.bounds.height-1, width: backgroundSearch.bounds.width, height: 1))
+        searchBottomView.layer.borderWidth = 1.0
+        searchBottomView.layer.borderColor = UIColor(red:222/255, green:225/255, blue:227/255, alpha: 1).cgColor
+        backgroundSearch.addSubview(searchBottomView)
+        
+        let hamburgerView = UIView(frame: CGRect(x: 0, y: 0, width: 1, height: backgroundHamburger.bounds.height-1))
+        hamburgerView.layer.borderWidth = 1.0
+        hamburgerView.layer.borderColor = UIColor(red:222/255, green:225/255, blue:227/255, alpha: 1).cgColor
+        backgroundHamburger.addSubview(hamburgerView)
         
         doctorViewModel = DoctorViewModel()
         let nib = UINib(nibName: "DoctorTableViewCell", bundle: nil)
@@ -66,6 +97,18 @@ class ViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    @IBAction func hamburgerDetail(_ sender: Any) {
+        performSegue(withIdentifier: "hamburgerDetail", sender: self)
+    }
+    
+    @IBAction func specialityTextButton(_ sender: Any) {
+        performSegue(withIdentifier: "specialityDetail", sender: self)
+    }
+    
+    @IBAction func specialityIconButton(_ sender: Any) {
+        performSegue(withIdentifier: "specialityDetail", sender: self)
     }
 }
 

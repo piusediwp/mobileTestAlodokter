@@ -22,6 +22,10 @@
 		A321141423153D6000342E8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A321141323153D6000342E8F /* Assets.xcassets */; };
 		A321141723153D6000342E8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A321141523153D6000342E8F /* LaunchScreen.storyboard */; };
 		A321141F23153DFC00342E8F /* DoctorData.json in Resources */ = {isa = PBXBuildFile; fileRef = A321141E23153DFC00342E8F /* DoctorData.json */; };
+		A37139DB23192C9F00B15D8F /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = A37139DA23192C9F00B15D8F /* menu.png */; };
+		A37139DD231979DD00B15D8F /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = A37139DC231979DD00B15D8F /* back.png */; };
+		A37139DF2319906C00B15D8F /* HamburgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37139DE2319906C00B15D8F /* HamburgerViewController.swift */; };
+		A37139E12319959F00B15D8F /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = A37139E02319959E00B15D8F /* search.png */; };
 		A3CDBF2123180B5000C793AC /* SpecialityData.json in Resources */ = {isa = PBXBuildFile; fileRef = A3CDBF2023180B5000C793AC /* SpecialityData.json */; };
 		A3CDBF2423183F1D00C793AC /* SpecialityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CDBF2323183F1D00C793AC /* SpecialityViewController.swift */; };
 		A3CDBF262318402E00C793AC /* SpecialityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3CDBF252318402E00C793AC /* SpecialityTableViewCell.xib */; };
@@ -48,6 +52,10 @@
 		A321141623153D6000342E8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A321141823153D6000342E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A321141E23153DFC00342E8F /* DoctorData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DoctorData.json; sourceTree = "<group>"; };
+		A37139DA23192C9F00B15D8F /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		A37139DC231979DD00B15D8F /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		A37139DE2319906C00B15D8F /* HamburgerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerViewController.swift; sourceTree = "<group>"; };
+		A37139E02319959E00B15D8F /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
 		A3CDBF2023180B5000C793AC /* SpecialityData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SpecialityData.json; sourceTree = "<group>"; };
 		A3CDBF2323183F1D00C793AC /* SpecialityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialityViewController.swift; sourceTree = "<group>"; };
 		A3CDBF252318402E00C793AC /* SpecialityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpecialityTableViewCell.xib; sourceTree = "<group>"; };
@@ -75,6 +83,7 @@
 				A321140E23153D5F00342E8F /* ViewController.swift */,
 				A321141023153D5F00342E8F /* Main.storyboard */,
 				A3CDBF2323183F1D00C793AC /* SpecialityViewController.swift */,
+				A37139DE2319906C00B15D8F /* HamburgerViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -109,6 +118,9 @@
 		A320D8B22316D73A00AE568A /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				A37139E02319959E00B15D8F /* search.png */,
+				A37139DC231979DD00B15D8F /* back.png */,
+				A37139DA23192C9F00B15D8F /* menu.png */,
 				A320D8BD2316ED5E00AE568A /* more.png */,
 				A320D8BB2316EC5800AE568A /* doctor.jpg */,
 				A320D8B72316E35700AE568A /* inbox.png */,
@@ -221,11 +233,14 @@
 				A321141F23153DFC00342E8F /* DoctorData.json in Resources */,
 				A320D8B62316E26500AE568A /* avatar.png in Resources */,
 				A321141723153D6000342E8F /* LaunchScreen.storyboard in Resources */,
+				A37139DB23192C9F00B15D8F /* menu.png in Resources */,
+				A37139DD231979DD00B15D8F /* back.png in Resources */,
 				A321141423153D6000342E8F /* Assets.xcassets in Resources */,
 				A320D8BC2316EC5800AE568A /* doctor.jpg in Resources */,
 				A320D8B82316E35700AE568A /* inbox.png in Resources */,
 				A3CDBF262318402E00C793AC /* SpecialityTableViewCell.xib in Resources */,
 				A320D8BE2316ED5E00AE568A /* more.png in Resources */,
+				A37139E12319959F00B15D8F /* search.png in Resources */,
 				A320D8B123166C3C00AE568A /* DoctorTableViewCell.xib in Resources */,
 				A321141223153D5F00342E8F /* Main.storyboard in Resources */,
 				A3CDBF2123180B5000C793AC /* SpecialityData.json in Resources */,
@@ -248,6 +263,7 @@
 				A321140D23153D5F00342E8F /* AppDelegate.swift in Sources */,
 				A320D8AF23166BB200AE568A /* DoctorTableViewCell.swift in Sources */,
 				A3CDBF2423183F1D00C793AC /* SpecialityViewController.swift in Sources */,
+				A37139DF2319906C00B15D8F /* HamburgerViewController.swift in Sources */,
 				A3CDBF2E2318427300C793AC /* SpecialityViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
