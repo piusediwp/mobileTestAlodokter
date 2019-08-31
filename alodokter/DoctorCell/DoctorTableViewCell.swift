@@ -48,10 +48,6 @@ class DoctorTableViewCell: UITableViewCell {
             self.ratingLabel.text = model.satisfaction
         }
         
-        
-        
-        
-        
         let pictureValue: String? = model.picture
         if(pictureValue != "") {
             let URL_IMAGE = URL(string: pictureValue ?? "")

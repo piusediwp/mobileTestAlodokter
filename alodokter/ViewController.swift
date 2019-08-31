@@ -24,8 +24,29 @@ class ViewController: UIViewController {
     
     var doctorViewModel: DoctorViewModel?
     
+    var count : Int = 0
+    var filter : String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        doctorViewModel = DoctorViewModel()
+        
+        let countData = doctorViewModel?.items.count ?? 0
+        
+        if(filter != "") {
+            for index in 1...countData {
+                let speciality = doctorViewModel!.items[index-1].speciality ?? ""
+                if(speciality == filter) {
+                    count += 1
+                }
+            }
+        }
+        
+        let nib = UINib(nibName: "DoctorTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "itemCell")
+        tableView.dataSource = self
+        tableView.delegate = self
         
         let screenRect = UIScreen.main.bounds
         let screenWidth = screenRect.size.width
@@ -87,12 +108,6 @@ class ViewController: UIViewController {
         hamburgerView.layer.borderWidth = 1.0
         hamburgerView.layer.borderColor = UIColor(red:222/255, green:225/255, blue:227/255, alpha: 1).cgColor
         backgroundHamburger.addSubview(hamburgerView)
-        
-        doctorViewModel = DoctorViewModel()
-        let nib = UINib(nibName: "DoctorTableViewCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "itemCell")
-        tableView.dataSource = self
-        tableView.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -114,12 +129,23 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if(filter != "") {
+            return (count)
+        }
         return (doctorViewModel?.items.count)!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell") as! DoctorTableViewCell
-        cell.setupDataFromModel(model: doctorViewModel!.items[indexPath.row])
+        
+        if(filter == "") {
+            cell.setupDataFromModel(model: doctorViewModel!.items[indexPath.row])
+        } else {
+            if(count > 0) {
+                cell.setupDataFromModel(model: doctorViewModel!.items[indexPath.row])
+            }
+        }
+        
         return cell
     }
     

@@ -20,7 +20,7 @@ class SpecialityTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func setupDataFromModel(model: SpecialityModel) {
-        self.nameLabel.text = model.name
+    func setupDataFromModel(name: String) {
+        self.nameLabel.text = name
     }
 }

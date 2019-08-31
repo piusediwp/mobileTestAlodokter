@@ -139,7 +139,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat dokter spesialis terbaik pilihanmu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DA4-Yc-nGd">
-                                                        <rect key="frame" x="82" y="38" width="188" height="12"/>
+                                                        <rect key="frame" x="82" y="38" width="187.5" height="12"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -162,7 +162,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ga-g6-Xh3">
                                                 <rect key="frame" x="0.0" y="66" width="343" height="40"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uar-7X-S0t">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uar-7X-S0t">
                                                         <rect key="frame" x="0.0" y="0.0" width="304" height="40"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -200,7 +200,7 @@
                                                     <constraint firstAttribute="trailing" secondItem="TXR-vl-rbc" secondAttribute="trailing" id="AEg-Np-rDz"/>
                                                     <constraint firstItem="uar-7X-S0t" firstAttribute="top" secondItem="9ga-g6-Xh3" secondAttribute="top" id="FdZ-Nr-Sx9"/>
                                                     <constraint firstItem="uar-7X-S0t" firstAttribute="leading" secondItem="9ga-g6-Xh3" secondAttribute="leading" id="HHb-nU-Rri"/>
-                                                    <constraint firstAttribute="trailing" secondItem="uar-7X-S0t" secondAttribute="trailing" constant="688" id="Rhw-P4-42F"/>
+                                                    <constraint firstAttribute="trailing" secondItem="uar-7X-S0t" secondAttribute="trailing" constant="39" id="PIN-GG-uFJ"/>
                                                     <constraint firstAttribute="height" constant="40" id="s1J-hi-fIq"/>
                                                 </constraints>
                                             </view>
@@ -317,15 +317,15 @@
             <objects>
                 <viewController id="c9F-Mt-9km" customClass="SpecialityViewController" customModule="alodokter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Il-e8-ZDb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QWy-fD-leQ">
-                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                                <rect key="frame" x="0.0" y="56" width="375" height="547"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Cari Spesialisasi" translatesAutoresizingMaskIntoConstraints="NO" id="XGE-u8-8GF">
-                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <scopeButtonTitles>
                                     <string>Title</string>
@@ -346,7 +346,7 @@
                         <viewLayoutGuide key="safeArea" id="idI-Ie-6Cu"/>
                     </view>
                     <navigationItem key="navigationItem" title="Pilih Dokter Spesialis" id="6N7-GO-fsV">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="back.png" landscapeImage="back.png" largeContentSizeImage="back.png" style="plain" id="bY2-xx-Tjk">
+                        <barButtonItem key="leftBarButtonItem" image="back.png" landscapeImage="back.png" largeContentSizeImage="back.png" id="bY2-xx-Tjk">
                             <connections>
                                 <action selector="specialityButton:" destination="c9F-Mt-9km" id="0hr-da-Fkv"/>
                                 <segue destination="BYZ-38-t0r" kind="presentation" identifier="specialityBack" id="teR-WM-NEV"/>
@@ -355,6 +355,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="backButton" destination="bY2-xx-Tjk" id="fhM-2Z-2p9"/>
+                        <outlet property="searchBar" destination="XGE-u8-8GF" id="lpp-pb-hLU"/>
                         <outlet property="tableView" destination="QWy-fD-leQ" id="26u-9y-KAX"/>
                     </connections>
                 </viewController>
@@ -373,7 +374,7 @@
                         <viewLayoutGuide key="safeArea" id="632-iC-S0F"/>
                     </view>
                     <navigationItem key="navigationItem" id="xSf-oy-uxT">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="back.png" landscapeImage="back.png" largeContentSizeImage="back.png" id="4gR-G2-c81">
+                        <barButtonItem key="leftBarButtonItem" image="back.png" landscapeImage="back.png" largeContentSizeImage="back.png" id="4gR-G2-c81">
                             <connections>
                                 <action selector="backButton:" destination="BBb-Oy-EoV" id="SRc-vg-Ura"/>
                                 <segue destination="BYZ-38-t0r" kind="presentation" identifier="hamburgerBack" id="ITJ-80-8Zv"/>
@@ -390,9 +391,15 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4zi-aJ-8wa" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6QE-HT-7Gv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="6QE-HT-7Gv">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
