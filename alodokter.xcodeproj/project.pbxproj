@@ -22,6 +22,7 @@
 		A321141423153D6000342E8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A321141323153D6000342E8F /* Assets.xcassets */; };
 		A321141723153D6000342E8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A321141523153D6000342E8F /* LaunchScreen.storyboard */; };
 		A321141F23153DFC00342E8F /* DoctorData.json in Resources */ = {isa = PBXBuildFile; fileRef = A321141E23153DFC00342E8F /* DoctorData.json */; };
+		A3652A66231B6A64000D3908 /* logo-square.png in Resources */ = {isa = PBXBuildFile; fileRef = A3652A65231B6A64000D3908 /* logo-square.png */; };
 		A37139DB23192C9F00B15D8F /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = A37139DA23192C9F00B15D8F /* menu.png */; };
 		A37139DD231979DD00B15D8F /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = A37139DC231979DD00B15D8F /* back.png */; };
 		A37139DF2319906C00B15D8F /* HamburgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37139DE2319906C00B15D8F /* HamburgerViewController.swift */; };
@@ -52,6 +53,7 @@
 		A321141623153D6000342E8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A321141823153D6000342E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A321141E23153DFC00342E8F /* DoctorData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DoctorData.json; sourceTree = "<group>"; };
+		A3652A65231B6A64000D3908 /* logo-square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-square.png"; sourceTree = "<group>"; };
 		A37139DA23192C9F00B15D8F /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		A37139DC231979DD00B15D8F /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		A37139DE2319906C00B15D8F /* HamburgerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		A320D8B22316D73A00AE568A /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				A3652A65231B6A64000D3908 /* logo-square.png */,
 				A37139E02319959E00B15D8F /* search.png */,
 				A37139DC231979DD00B15D8F /* back.png */,
 				A37139DA23192C9F00B15D8F /* menu.png */,
@@ -231,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A321141F23153DFC00342E8F /* DoctorData.json in Resources */,
+				A3652A66231B6A64000D3908 /* logo-square.png in Resources */,
 				A320D8B62316E26500AE568A /* avatar.png in Resources */,
 				A321141723153D6000342E8F /* LaunchScreen.storyboard in Resources */,
 				A37139DB23192C9F00B15D8F /* menu.png in Resources */,
